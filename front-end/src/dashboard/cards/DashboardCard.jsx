@@ -9,7 +9,7 @@ const DashboardCard = ({ title, icon: Icon, value, description, row }) => {
           <h3 className="text-lg font-semibold flex items-center justify-between gap-2">
             <span>{title}</span> {Icon && <Icon size={18} />}
           </h3>
-          <div className="text-2xl font-bold">{value}</div>
+          <div className="text-xl font-bold">{value}</div>
           <div className="text-sm text-gray-600 font-semibold">
             {description}
           </div>

@@ -8,11 +8,6 @@ const Home = () => {
 
   const totalAssets = visibleAssets.length;
 
-  const totalBookValue = visibleAssets.reduce(
-    (sum, a) => sum + (a.depreciatedPrice || 0),
-    0
-  );
-
   const totalPurchase = visibleAssets.reduce(
     (sum, a) => sum + (Number(a.purchaseCost) || 0),
     0
@@ -56,7 +51,7 @@ const Home = () => {
           <DashboardCard
             title={"Total Book Value"}
             icon={DollarSign}
-            value={`₱ ${Number(totalBookValue).toFixed(2)}`}
+            value={`₱ ${(totalDepreciated).toFixed(2)}`}
             description={"Current value of all Assets"}
             row={"1"}
           />
