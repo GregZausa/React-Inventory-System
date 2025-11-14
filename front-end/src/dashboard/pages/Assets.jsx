@@ -249,7 +249,7 @@ const Assets = () => {
         </div>
       </div>
       <div className="flex-1 px-6 pb-10 mt-6 overflow-auto m-6 scrollbar-none">
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid gap-4">
           {filteredAssets.length > 0 ? (
             filteredAssets.map((asset) => (
               <AssetsCard

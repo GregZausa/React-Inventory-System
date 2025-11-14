@@ -13,7 +13,7 @@ export const useDepreciation = () => {
     0
   );
   const totalDepreciation = totalPurchase - totalDepreciated;
-  return { totalPurchase, totalDepreciated, totalDepreciation };
+  return { totalPurchase, totalDepreciated, totalDepreciation, visibleAssets };
 };
 
 export default useDepreciation;
