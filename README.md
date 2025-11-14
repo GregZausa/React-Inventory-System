@@ -1,32 +1,35 @@
-Inventory System MVP
+**Inventory System MVP**
 
 This project is a Minimum Viable Product (MVP) version of a fully-featured Inventory Management System built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
 
-Note: This MVP currently uses localStorage for data storage. The full version will integrate a backend database for persistent storage and advanced functionality.
+**Note:** This MVP currently uses localStorage for data storage. The full version will integrate a backend database for persistent storage and advanced functionality.
 
-Features
+
+**Features**
 
 Add, Edit, Delete Items – Manage inventory items quickly.
 
 LocalStorage Data Storage – Temporarily stores data on the browser.
 
-React Frontend – Interactive and responsive user interface.
+**React Frontend** – Interactive and responsive user interface.
 
-Hooks Usage – Utilizes React hooks like useState, useEffect, useCallback, and custom hooks for efficient state management and logic reuse.
+**Hooks Usage** – Utilizes React hooks like useState, useEffect, useCallback, and custom hooks for efficient state management and logic reuse.
 
-MERN Ready – Structured to integrate a Node.js backend and MongoDB for full-stack functionality later.
+**MERN Ready** – Structured to integrate a Node.js backend and MongoDB for full-stack functionality later.
 
-Tech Stack
 
-Frontend: React.js, JavaScript, HTML, CSS
+**Tech Stack**
 
-Backend (Future Version): Node.js, Express.js
+**Frontend:** React.js, JavaScript, HTML, CSS
 
-Database (Future Version): MongoDB
+**Backend** (Future Version): Node.js, Express.js
 
-State Management: React useState and localStorage for MVP
+**Database** (Future Version): MongoDB
 
-Future Enhancements
+**State Management**: React useState and localStorage for MVP
+
+
+**Future Enhancements**
 
 Replace localStorage with MongoDB database.
 
