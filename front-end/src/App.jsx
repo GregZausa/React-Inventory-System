@@ -1,7 +1,7 @@
 import React from "react";
 import LogIn from "./auth/LogIn";
 import { Toaster } from "react-hot-toast";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./dashboard/pages/Home";
 import Assets from "./dashboard/pages/Assets";
 import Layout from "./dashboard/Layout";
@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/assets" element={<Assets />} />
           <Route path="/accounts" element={<Accounts />} />
           <Route path="/reports" element={<Reports />}>
+            <Route index element={<Navigate to="depreciation" replace />} />
             <Route path="depreciation" element={<DepreciationPage />} />
             <Route path="inventory" element={<InventoryPage />} />
             <Route path="lifecycle" element={<LifecyclePage />} />

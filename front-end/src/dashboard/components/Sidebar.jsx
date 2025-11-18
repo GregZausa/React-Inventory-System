@@ -54,7 +54,7 @@ const Sidebar = () => {
             </NavLink>
           )}
 
-          <NavLink to="/reports/depreciation" className={navClassName}>
+          <NavLink to="/reports" className={navClassName} end={false}>
             <FileClock size={20} />
             <span>Reports</span>
           </NavLink>

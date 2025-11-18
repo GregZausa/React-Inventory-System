@@ -47,8 +47,9 @@ const AssetsCard = ({ asset, handleDelete, handleEdit, handleActivate }) => {
     Pending: { color: "bg-blue-100 text-blue-700", icon: Clock },
     Deployed: { color: "bg-green-100 text-green-700", icon: CheckCircle },
     Inactive: { color: "bg-gray-100 text-gray-700", icon: XCircle },
-    Maintenance: { color: "bg-orange-100 text-orange-700", icon: Wrench },
-    Retired: { color: "bg-red-100 text-red-700", icon: Archive },
+    //Might use later
+    /*Maintenance: { color: "bg-orange-100 text-orange-700", icon: Wrench },
+    Retired: { color: "bg-red-100 text-red-700", icon: Archive },*/
   };
 
   const currentStatus = statusConfig[status] || statusConfig.Pending;
