@@ -33,6 +33,7 @@ export const useInventory = () => {
     totalOnStockAssets,
     totalInactiveAssets,
     totalCriticalAssets,
+    visibleAssets,
   };
 };
 

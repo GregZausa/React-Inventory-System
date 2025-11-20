@@ -12,6 +12,7 @@ const InventoryPage = () => {
     totalCriticalAssets,
     totalInactiveAssets,
     totalOnStockAssets,
+    visibleAssets,
   } = useInventory();
   return (
     <div>
@@ -57,6 +58,25 @@ const InventoryPage = () => {
             value={totalCriticalAssets}
             type={"card"}
           />
+        </div>
+        <div className="flex-1 pb-10 mt-6 max-h-[415px] overflow-auto scrollbar-none">
+          <div className="grid gap-4">
+            {visibleAssets.length > 0 ? (
+              visibleAssets
+                .map((asset) => (
+                  <InventoryCard
+                    key={asset.id}
+                    asset={asset}
+                    type={"list"}
+                  />
+                ))
+                .reverse()
+            ) : (
+              <p className="font-semibold text-xl text-gray-500 italic col-span-full text-center py-10">
+                No current added asset
+              </p>
+            )}
+          </div>
         </div>
       </ContentLayout>
     </div>
