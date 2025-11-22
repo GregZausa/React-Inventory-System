@@ -36,7 +36,6 @@ export const useAssets = () => {
         purchaseCost - monthlyDepreciation * monthsPassed,
         0
       );
-
       const age = Number((monthsPassed / 12).toFixed(2));
       const yearsPassed = monthsPassed / 12;
       if (yearsPassed >= lifespan) {
@@ -53,6 +52,7 @@ export const useAssets = () => {
       };
     });
   }, []);
+  
   const addAsset = useCallback(
     (newAsset) => {
       setAssets((prev) => {

@@ -58,7 +58,7 @@ const InventoryCard = ({ title, type, value, asset }) => {
 
         <div className="flex justify-between">
           {" "}
-          <h3 className="text-lg font-bold felx items-center gap-2">
+          <h3 className="text-lg font-bold flex items-center gap-2">
             <Package size={18} /> {assetName}
           </h3>{" "}
           <div className="flex justify-between gap-2.5">

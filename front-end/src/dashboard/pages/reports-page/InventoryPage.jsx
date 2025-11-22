@@ -72,9 +72,9 @@ const InventoryPage = () => {
                 ))
                 .reverse()
             ) : (
-              <p className="font-semibold text-xl text-gray-500 italic col-span-full text-center py-10">
-                No current added asset
-              </p>
+                <p className="font-semibold text-xl text-gray-500 italic col-span-full text-center py-10">
+                  No current added asset
+                </p>
             )}
           </div>
         </div>
