@@ -5,9 +5,9 @@ import useInventory from "./useInventory";
 export const useLifecycle = () => {
   const { visibleAssets } = useAssets();
   const { totalDepreciated } = useDepreciation();
-  const { totalAssets } = useInventory();
+  const { totalAssets, totalCriticalAssets } = useInventory();
 
-  return { totalAssets, totalDepreciated, visibleAssets };
+  return { totalAssets, totalDepreciated, visibleAssets, totalCriticalAssets };
 };
 
 export default useLifecycle;

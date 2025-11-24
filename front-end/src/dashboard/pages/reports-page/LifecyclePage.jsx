@@ -5,7 +5,7 @@ import useLifecycle from "../../hooks/useLifecycle";
 import LifecycleCard from "../../cards/LifecycleCard";
 
 const LifecyclePage = () => {
-  const { visibleAssets } = useLifecycle();
+  const { visibleAssets, totalDepreciated, totalAssets, totalCriticalAssets } = useLifecycle();
   return (
     <div>
       <ContentLayout>
@@ -19,7 +19,21 @@ const LifecyclePage = () => {
         <span className="text-sm font-semibold text-gray-500">
           Analyze asset depreciation, valuation changes, and lifecycle status.
         </span>
-        <div className="grid grid-cols-3 gap-5"></div>
+        <div className="grid grid-cols-3 gap-5">
+          <LifecycleCard
+          type={"card"}
+          title={"Total Number of Assets"}
+          value={totalAssets}/>
+          <LifecycleCard
+          type={"card"}
+          title={"Total Book Value"}
+          value={`₱ ${totalDepreciated}`}/>
+          <LifecycleCard
+          type={"card"}
+          title={"Total Critical Assets"}
+          value={totalCriticalAssets}/>
+          
+        </div>
         <div className="flex-1 pb-10 mt-6 max-h-[415px] overflow-auto scrollbar-none">
           <div className="grid gap-4">
             {visibleAssets.length > 0 ? (
